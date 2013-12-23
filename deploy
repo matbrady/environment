@@ -18,6 +18,7 @@ dotfiles = %w[
   dotfiles/gemrc
   dotfiles/gitconfig
   dotfiles/gitignore
+  dotfiles/git-completion
   dotfiles/hushlogin
   dotfiles/irbrc
   dotfiles/ruby-version

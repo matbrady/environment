@@ -19,7 +19,7 @@ shopt -s cdspell
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # Editor
-export EDITOR="/usr/local/bin/mate -w"
+export EDITOR="/usr/local/bin/subl -w"
 
 # Don't clear the screen after quitting a manual page
 export MANPAGER="less -X"
