@@ -291,6 +291,7 @@ alias 'apache_restart'='sudo apachectl restart'
 # Shorthand
 alias gb="git branch -v"
 alias gc="git commit"
+alias gco="git checkout"
 alias gcom="git checkout master"
 alias gcod="git checkout development"
 alias ga="git add --all"
