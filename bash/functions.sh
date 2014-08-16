@@ -166,7 +166,7 @@ alias runserver="manage runserver 0.0.0.0:8080"
 
 # Activate the venv, but give me back my pretty prompt
 function venv {
-	source venv/bin/activate
+	source bin/activate
 	export PS1="\n\[$(tput setaf 2)\]VIRTUAL ⚡ \[$(tput sgr0)\]"
 }
 
@@ -326,6 +326,18 @@ function greset () {
 
 }
 
+# -----------------------------------------------------------------------------
+# Grunt
+# -----------------------------------------------------------------------------
+# Install a grunt plugin and save to devDependencies
+function gi() {
+  npm install --save-dev grunt-"$@"
+}
+
+# Install a grunt-contrib plugin and save to devDependencies
+function gci() {
+  npm install --save-dev grunt-contrib-"$@"
+}
 
 # -----------------------------------------------------------------------------
 # Misc
