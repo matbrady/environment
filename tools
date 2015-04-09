@@ -12,6 +12,11 @@ fav_tools = %w[
   pngcrush
   python
   rbenv
+  chruby
+  libyaml
+  gdbm
+  ruby-install
+  readline
   ruby-build
   ssh-copy-id
   tree

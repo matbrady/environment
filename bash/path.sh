@@ -9,6 +9,10 @@ export OSX_PATH="/usr/bin:/usr/sbin:/bin:/sbin"
 
 export PATH="$USR_PATH:$HEROKU_PATH:$PG_PATH:$PEAR_PATH:$NODE_PATH:$OSX_PATH"
 
-# Activate rbenv
-export RBENV_ROOT="/usr/local/var/rbenv"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# Activate chruby and the .ruby-version auto-switcher
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
